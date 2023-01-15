@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Homepage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-image: url(Images/istockphoto-1294603953-612x612.jpg);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 475px; /* only for demonstration, should be removed */
+  background:silver;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-style:italic;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-image: url(Images/pexels-elīna-arāja-3377405.jpg);
+  height: 475px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color:cornflowerblue;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Adri's Homepage</h1>
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="#">Biodata</a></li>
+            <br>
+            <li><a href="#">Experience</a></li>
+            <br>
+            <li><a href="#">Education</a></li>
+            <br>
+            <li><a href="#">Family</a></li>
+            <br>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+<article>
+    <h2><i>Hi There !!!</i></h2>
+<p>
+    <h7>My name is Adri Hafiz bin Afezul and this is homepage. In this hompege, you will explore and learn more about me which not everyone really know about it. Hopefully you guys enjoy !!! :)</h7>
+</p>
+</footer>
+</article>
+</section>
+</body>
+</html>
